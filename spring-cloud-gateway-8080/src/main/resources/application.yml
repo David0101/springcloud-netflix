@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-cloud-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: config_route
+          predicates:
+            - Path=/gateway/to-user/**
+          filters:
+            - StripPrefix=2 # 这样转发时就会去掉 从左往右两个参数/gateway/to-user
+          uri: http://localhost:8081/
