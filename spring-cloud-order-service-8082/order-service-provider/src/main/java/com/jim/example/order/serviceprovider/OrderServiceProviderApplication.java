@@ -1,4 +1,4 @@
-package com.jim.gateway.springcloudgateway;
+package com.jim.example.order.serviceprovider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,8 +6,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @EnableEurekaClient
 @SpringBootApplication
-public class SpringCloudGatewayApplication {
+public class OrderServiceProviderApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringCloudGatewayApplication.class, args);
+        SpringApplication.run(OrderServiceProviderApplication.class, args);
     }
 }

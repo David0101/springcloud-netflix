@@ -11,3 +11,14 @@ spring:
             - StripPrefix=2 # 这样转发时就会去掉 从左往右两个参数/gateway/to-user
             - JimDefine=Hello Jim
           uri: http://localhost:8081/
+
+        - id: lb_route
+          predicates:
+            - Path=/lb/**
+          filters:
+            - StripPrefix=1
+          uri: lb://order-service
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true

@@ -13,6 +13,9 @@
         <module>spring-cloud-user-service-8081</module>
         <module>spring-cloud-user-service-8081/user-service-provider</module>
         <module>spring-cloud-gateway-8080</module>
+        <module>spring-cloud-order-service-8082</module>
+        <module>spring-cloud-order-service-8082/order-service-api</module>
+        <module>spring-cloud-order-service-8082/order-service-provider</module>
     </modules>
 
     <properties>
